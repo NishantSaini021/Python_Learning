@@ -26,4 +26,4 @@ elif s == "no":
 else:
     print("Please valid Input Yes or No")
 
-print("Your Total for Coffee is $",price,"Thanks")
+print("Your Total for Coffee is $",price,"Thanks, Visit Again")
