@@ -47,22 +47,41 @@
 
 
 
-age = int(input("Please Enter Your Age Before Buying a Ticket: "))
-p = 0
-if age < 0:
-    print("Please Enter Valid Age")
-elif age < 12:
-    p += 100
-elif age <60:
-    p += 200
+# age = int(input("Please Enter Your Age Before Buying a Ticket: "))
+# p = 0
+# if age < 0:
+#     print("Please Enter Valid Age")
+# elif age < 12:
+#     p += 100
+# elif age <60:
+#     p += 200
+# else:
+#     p += 120
+
+# Extra = (input("Is it Weekend ? (yes/no): ")).strip().lower()
+# if Extra == "yes":
+#     p += 50
+# elif Extra != "no":
+#     print("Please Enter Valid Input")
+
+
+# print(f"Please Pay {p}INR at the Counter")
+
+
+
+
+password = input("Please, Enter Password: ")
+
+if len(password) < 6:
+    print("Passwod is Weak")
+elif len(password) < 10:
+    print("Password is Medium")
 else:
-    p += 120
+    print("Password is Storng")
 
-Extra = (input("Is it Weekend ? (yes/no): ")).strip().lower()
-if Extra == "yes":
-    p += 50
-elif Extra != "no":
-    print("Please Enter Valid Input")
-
-
-print(f"Please Pay {p}INR at the Counter")
+for char in password:
+    if char.isdigit():
+        print("Contains Number: Yes")
+        break
+else:
+    print("Contains Number: No")
