@@ -15,9 +15,17 @@
 # Display the total electricity bill at the end.
 
 units_consumed = int(input("Enter the number of units consumed: "))
-
+bill_amount = 0
 if units_consumed < 1:
     print("Invalid Input")
 elif units_consumed < 101:
     bill_amount = (units_consumed)*5
-    print(f"Total Electricty Bill is {bill_amount}")
+    Category = "Low Consumption"
+elif units_consumed < 201:
+    bill_amount = (100*5)+(units_consumed-100)*8
+    Category = "Moderate Consumption"
+else:
+    bill_amount =(100*5)+(100*8)+(units_consumed-200)*10
+    Category = "High Consumption"
+print(f"Total Electricty Bill is {bill_amount}INR")
+print(Category)
