@@ -1,4 +1,4 @@
-# #
+
 # Electricity Bill Calculator
 
 # Problem Statement:

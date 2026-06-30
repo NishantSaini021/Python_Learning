@@ -3,6 +3,10 @@ def chai(n):
     print(n)
 
 chai(1)
+
+
+
+
 nums = [10,20,30]
 nums.append(40)
 nums.insert(1,50)
@@ -13,24 +17,38 @@ b = [3,4]
 print(a + b)
 print(nums)
 
+
+
+
 numbers = []
 for i in range(11,15):
     numbers.append(i)
 
 print(numbers)
 
+
+
 numbers2 = [i for i in range(5)]
 print(numbers2)
 
+
+
 squares = [x*x for x in range (1,5)]
-print(squares
-      )
+print(squares)
+
+
+
 evens = [x for x in range(13) if x % 2 == 0]
 evens2 = evens[::-2]
 print(evens)
 print(evens2)
+
+
+
 Multiple_of_Four = [((4*4)+i) // (i*i) for i in range(1,3)]
 print(Multiple_of_Four)
+
+
 
 t = (10,20,30,40,50,20,20)
 print(t[2])
@@ -43,12 +61,19 @@ def icount(x):
 icount(40)
 icount(20)
 
+
+
+
 s = {1,2,3,4,5,6,7,8,5,5,4,2,3,2,2,2}
 s.remove(1)
 
 s.discard(20)
 s.add(9)
 print(s)
+
+
+
+
 
 a = {1,2,4}
 b = {4,5,6}
@@ -58,6 +83,10 @@ def uni(a,b):
 uni(a,b)
 print(a-b)
 print(a^b) #symmetric difference
+
+
+
+
 
 student = {
     "name": "Nishant",

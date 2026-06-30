@@ -74,7 +74,7 @@ password = input("Please, Enter Password: ")
 
 if len(password) < 6:
     print("Passwod is Weak")
-elif len(password) < 10:
+elif len(password) < 11:
     print("Password is Medium")
 else:
     print("Password is Storng")
