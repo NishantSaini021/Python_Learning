@@ -17,12 +17,42 @@
 #     print(x*i)
 
 
-# Write a program that counts how many even numbers exist between two numbers.
+########### Write a program that counts how many even numbers exist between two numbers.
 
-m = int(input("Enter Starting Number: "))
-n = int(input("Enter Final Number: "))
-y = 0
-for i in range(m,n+1):
-    if i % 2 == 0:
-        y += 1
-print(y)
+# m = int(input("Enter Starting Number: "))
+# n = int(input("Enter Final Number: "))
+# y = 0
+# for i in range(m,n+1):
+#     if i % 2 == 0:
+#         y += 1
+# print(y)
+
+
+
+########## Count How Many Digits are present in a String
+
+# s = input("Please enter a String to Count number of Digits in it: ")
+# count = 0
+# for char in s:
+#    if char.isdigit():
+#     count += 1
+# print(count)
+
+
+############ Count Letters, Digits and Special Characters
+s = input("Please enter a String: ")
+letters = 0
+Numbers = 0
+Special = 0
+
+for char in s:
+    if char.isalpha():
+        letters += 1
+    elif char.isdigit():
+        Numbers += 1
+    else:
+        Special += 1
+
+print(f"{letters}Letters")
+print(f"{Numbers} Digits")
+print(f"{Special} Special Characters")
