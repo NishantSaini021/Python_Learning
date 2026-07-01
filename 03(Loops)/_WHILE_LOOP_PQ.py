@@ -39,8 +39,3 @@
 #     total += i
 #     i += 1
 # print(total)
-
-
-
-
-########
