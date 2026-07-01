@@ -40,19 +40,47 @@
 
 
 ############ Count Letters, Digits and Special Characters
-s = input("Please enter a String: ")
-letters = 0
-Numbers = 0
-Special = 0
+# s = input("Please enter a String: ")
+# letters = 0
+# Numbers = 0
+# Special = 0
 
+# for char in s:
+#     if char.isalpha():
+#         letters += 1
+#     elif char.isdigit():
+#         Numbers += 1
+#     else:
+#         Special += 1
+
+# print(f"{letters}Letters")
+# print(f"{Numbers} Digits")
+# print(f"{Special} Special Characters")
+
+
+
+
+########## Check given string is a Palindrome ot not
+# s = input("Please enter a String: ")
+# y = len(s)-1
+# reversed_s = ""
+# for i in range(y,-1,-1):
+#     reversed_s += s[i]
+# if reversed_s == s:
+#     print(f"{s} is a Palindrome")
+# else:
+#     print(f"{s} is not a Palindrome")
+
+
+
+
+######### Count frequency of each character
+s = input("Please enter a String: ").lower().strip()
+seen = set()
 for char in s:
-    if char.isalpha():
-        letters += 1
-    elif char.isdigit():
-        Numbers += 1
-    else:
-        Special += 1
-
-print(f"{letters}Letters")
-print(f"{Numbers} Digits")
-print(f"{Special} Special Characters")
+    count = s.count(char)
+    if char in seen:
+        continue
+    
+    seen.add(char)
+    print(f"{char}:{count}")
