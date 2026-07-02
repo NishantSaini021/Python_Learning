@@ -44,7 +44,8 @@ This repository contains my Python learning journey.
 - [x] Tuples
 - [x] Sets
 - [x] Dictionaries
-- [ ] Loops
+- [x] Loops
+- [x] Functions
 - [ ] File Handling
 - [ ] OOP
 
