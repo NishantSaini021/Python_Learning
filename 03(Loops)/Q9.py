@@ -21,3 +21,17 @@ else:
 
 
 # Using while loop
+items = ["apple", "banana", "orange", "apple", "mango"]
+seen = set()
+Duplicate = False
+i = 0
+while i < len(items):
+    if items[i] in seen:
+        Duplicate = True
+        break
+    seen.add(items[i])
+    i += 1
+if Duplicate:
+    print(items[i])
+else:
+    print("No Duplicate Found")
