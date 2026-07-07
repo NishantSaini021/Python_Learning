@@ -46,7 +46,7 @@ This repository contains my Python learning journey.
 - [x] Dictionaries
 - [x] Loops
 - [x] Functions
-- [ ] File Handling
+- [x] File Handling
 - [ ] OOP
 
 ## Author
