@@ -12,22 +12,39 @@
 # print(s1.branch)
 
 
-class Student:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-    def show_age(self):
-        print("Age:",self.age)
-    def show_name(self):
-        print("Name:", self.name)
-    def show_name_age(self):
-        print(self.name,self.age)
+# class Student:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#     def show_age(self):
+#         print("Age:",self.age)
+#     def show_name(self):
+#         print("Name:", self.name)
+#     def show_name_age(self):
+#         print(self.name,self.age)
 
 
-s1 = Student("Nishant", 20)
-s2 = Student("Raman", 19)
+# s1 = Student("Nishant", 20)
+# s2 = Student("Raman", 19)
 # print(s1.name)
 # print(s2.age)
-s1.show_name_age()
-s2.show_name_age()
+# s1.show_name_age()
+# s2.show_name_age()
+
+
+# class Student:
+#     def __init__(self, name):
+#         self.__name = name
+# s1 = Student("Nishant")
+
+# print(s1._Student__name)        
+
+class Student:
+    def __init__(self,name,age):
+        self.name = name
+        self.__age = age
+    def get_age(self):
+        return(self.__age)
+s1 = Student("Nishant", 20)
+print(s1.get_age())
 

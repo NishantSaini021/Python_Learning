@@ -10,8 +10,8 @@ class ElectricCar(Car):
         Car.__init__(self, brand)
         self.battery_size = battery_size
 
-e1 = ElectricCar("Tata", "50KwHz")
-e2 = ElectricCar("Audi", "45KwHz")
+e1 = ElectricCar("Tata", "50KwH")
+e2 = ElectricCar("Audi", "45KwH")
 print(e1.brand)
 print(e1.battery_size)
 print(e2.brand)
