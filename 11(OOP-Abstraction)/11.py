@@ -5,13 +5,10 @@ class Animal(ABC):
     @abstractmethod
     def sound(self):
         pass
-
-
+    
 class Dog(Animal):
-
     def sound(self):
         print("Woof")
-
 
 d = Dog()
 d.sound()
