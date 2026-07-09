@@ -220,12 +220,7 @@
 # Then:
 #
 # print(emp1.get_salary())
-#
-# Prediction:
-#
-# What should happen?
-#
-# Why?
+
 
 
 from abc import ABC,abstractmethod
